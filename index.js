@@ -1,12 +1,12 @@
-/*       .#.                                                       
-        @@@@@                                                      
-        @@@@@                                                      
-          @                                                        
-    .....@@@                                                       
-   .@@@@@@@                                                        
-   @@@@@@@                                                         
-    @@@@@@@:@@@..@@@@@@@  @@@   @@@ @@@@@@@@   @@@@@@@      @@@@   
-   .@@@@@@@@    @@@@@@@@  @@@   @@@ @@@@@@@@@  @@@@@@@@@  @@@@@@@@ 
+/*       .#.
+        @@@@@
+        @@@@@
+          @
+    .....@@@
+   .@@@@@@@
+   @@@@@@@
+    @@@@@@@:@@@..@@@@@@@  @@@   @@@ @@@@@@@@   @@@@@@@      @@@@
+   .@@@@@@@@    @@@@@@@@  @@@   @@@ @@@@@@@@@  @@@@@@@@@  @@@@@@@@
    '@@@@@@@@@@@@@@@       @@@   @@@ @@@    @@@ @@@   @@@ @@@    @@@
 :@@@@@@@@@:     @@@@@@@@  @@@   @@@ @@@@@@@@@  @@@@@@@@@ @@@    @@@
   `@@@@:             @@@  @@@   @@@ @@@#@@@    @@@@@@@@  @@@@@@@@@@
@@ -18,7 +18,7 @@
   Developer
   Friendly
   Framework.
-	
+
 	Queue Class File
 */
 
@@ -53,7 +53,7 @@ module.exports = Supra.Class.extend({
 	enqueue:function(process,sync){
 		this.processes.push({
 			process : process,
-			sync : sync	
+			sync : sync
 		})
 		return this
 	},
@@ -70,7 +70,7 @@ module.exports = Supra.Class.extend({
 			this.callback.call(this.context)
 		}else{
 			this.runContext = context
-			this.loop(0,context)			
+			this.loop(0,context)
 		}
 		return this
 	},
@@ -87,7 +87,7 @@ module.exports = Supra.Class.extend({
 	},
 
 
-	
+
 	/**
 	 * [finish description]
 	 * @return {[type]} [description]
